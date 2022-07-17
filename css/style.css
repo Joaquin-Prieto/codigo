@@ -230,7 +230,7 @@ body {
     text-align: left;
     padding: 2%; }
   .nav__links--li:hover {
-    background-color: #272727;
+    background-image: linear-gradient(to right, #4a4a4a, #272727);
     color: white;
     text-decoration: none; }
   footer {
@@ -261,7 +261,7 @@ body {
   .offcanvas-body {
     background-color: #1d1d1d; }
   .navbar__links--li:hover {
-    background-color: #101010;
+    background-image: linear-gradient(to right, #4e4e4e, #272727);
     color: white; }
   .navbar-nav {
     justify-content: end;
@@ -526,7 +526,7 @@ body {
     text-align: left;
     padding: 2%; }
   .nav__links--li:hover {
-    background-color: #272727;
+    background-image: linear-gradient(to right, #4a4a4a, #272727);
     color: white;
     text-decoration: none; }
   footer {
@@ -819,7 +819,7 @@ body {
     text-align: left;
     padding: 2%; }
   .nav__links--li:hover {
-    background-color: #272727;
+    background-image: linear-gradient(to right, #4a4a4a, #272727);
     color: white;
     text-decoration: none; }
   footer {
