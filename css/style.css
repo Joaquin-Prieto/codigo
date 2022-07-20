@@ -184,7 +184,7 @@ body {
     margin-top: 1%; }
   /*contacto*/
   form {
-    width: 30%;
+    width: 100%;
     line-height: 2;
     margin-left: auto;
     margin-right: auto;
@@ -193,7 +193,15 @@ body {
     background-color: #141414;
     color: white;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: larger; }
+    font-size: larger;
+    padding: 1%; }
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #5e5e5e !important;
+    border: 1px solid white !important; }
+  .main__contacto {
+    padding-left: 33%;
+    padding-right: 33%;
+    margin-top: 5%; }
   #contactate {
     color: white;
     font-family: 'IBM Plex Sans Condensed', sans-serif; }
@@ -480,7 +488,7 @@ body {
     margin-top: 1%; }
   /*contacto*/
   form {
-    width: 30%;
+    width: 100%;
     line-height: 2;
     margin-left: auto;
     margin-right: auto;
@@ -489,7 +497,15 @@ body {
     background-color: #141414;
     color: white;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: larger; }
+    font-size: larger;
+    padding: 1%; }
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #5e5e5e !important;
+    border: 1px solid white !important; }
+  .main__contacto {
+    padding-left: 33%;
+    padding-right: 33%;
+    margin-top: 5%; }
   #contactate {
     color: white;
     font-family: 'IBM Plex Sans Condensed', sans-serif; }
@@ -773,7 +789,7 @@ body {
     margin-top: 1%; }
   /*contacto*/
   form {
-    width: 30%;
+    width: 100%;
     line-height: 2;
     margin-left: auto;
     margin-right: auto;
@@ -782,7 +798,15 @@ body {
     background-color: #141414;
     color: white;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: larger; }
+    font-size: larger;
+    padding: 1%; }
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #5e5e5e !important;
+    border: 1px solid white !important; }
+  .main__contacto {
+    padding-left: 33%;
+    padding-right: 33%;
+    margin-top: 5%; }
   #contactate {
     color: white;
     font-family: 'IBM Plex Sans Condensed', sans-serif; }
