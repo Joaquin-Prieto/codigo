@@ -1,3 +1,4 @@
+@import "variables";
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +15,9 @@ body {
 @media (min-width: 1621px) {
     #qs__main {
         height: 46rem;
-       
+
     }
-    
+
     nav {
         width: 100%;
         height: 6rem;
@@ -24,7 +25,7 @@ body {
         color:white;
         overflow: hidden;
     }
-    
+
     nav a {
         width: 80px;
         padding: 20px;
@@ -33,42 +34,34 @@ body {
         text-align: center;
         height: 20px;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     #header__navbar {
         position: fixed;
         top: 0;
         border-bottom: 1px solid rgb(29, 29, 29);
         background-color: black;
-        
+
     }
-    
-    
+
+
     #intro-home {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 60px;
-        margin-top: 60px;
+        margin-bottom: auto;
+        margin-top: auto;
+        display: grid;
         width: 50%;
         line-height: 1.6;
     }
-    
-    #intro-home p {
-        margin-top: 25px;
-        font-size: larger;
-    
-    }
-    
-    #intro-home img {
-        width: 100%;
-    }
-    
+
+   
     #home__header {
         background-image: url("../img/b3.webp");
         background-repeat: no-repeat;
@@ -76,19 +69,70 @@ body {
         background-position: 50%;
         background-size: 110%;
         height: 800px;
-    
+
     }
-    
-    
-    
+
+
+    #intro-home p {
+        margin-top: 25px;
+        font-size: larger;
+        margin-top: auto;
+        margin-bottom: auto;
+
+
+    }
+
+    #intro-home img {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .home-grid {
+        display: grid;
+        height: 740;
+        grid-template-rows: 100px 300px 180px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    .h-grid-h1 {
+        grid-row: 1 / 2;
+    }
+
+    .h-grid-img {
+        grid-row: 2 / 3;
+    }
+
+    .h-grid-p {
+        grid-row: 3 / 4;
+    }
+
     .titulo-principal {
         font-family: 'monserrat', sans-serif;
         color: white;
         text-align: center;
-        margin-top: 80px;
+        margin-top: auto;
+        margin-bottom: auto;
         text-decoration: none;
-    
+        padding-top: auto;
+        padding-bottom: auto;
+
     }
+
+    #intro-home-h1 {
+        font-family: 'monserrat', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration: none;
+        padding-top: auto;
+        padding-bottom: auto;
+
+    }
+
     /*quienes-somos*/
     #qs__heading {
         text-align: center;
@@ -98,32 +142,32 @@ body {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-    
+
     }
-    
+
     #qs__heading h1 {
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    
+
     #qs__heading p {
         line-height: 1.6;
     }
-    
+
     #qs__titulo {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-    
-    
+
+
     }
-    
+
     .qs__p {
         color: white;
         line-height: 1.6;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-    
+
     }
-    
+
     .qs__video {
         color: white;
         line-height: 1.6;
@@ -134,28 +178,31 @@ body {
         padding: 10px;
         width: 40%;
     }
-    
+
     #video {
         padding: 0px 0px 7px 0px;
         border-bottom: 2px solid white;
         margin-left: auto;
         margin-right: auto;
-        width: 500px ;
-        height:270px;
+        width: 500px;
+        height: 270px;
     }
-    iframe{
-        width: 500px ;
-        height:270px;
+
+    iframe {
+        width: 500px;
+        height: 270px;
     }
+
     .qs__video h2 {
         margin-bottom: 20px;
     }
-    
+
     .qs__video p {
         margin-top: 30px;
         margin-bottom: 120px;
-    
+
     }
+
     /*Servicio*/
     .subtitulo__servicio {
         color: white;
@@ -164,7 +211,7 @@ body {
         margin-bottom: 1%;
         text-align: center;
     }
-    
+
     #velocidad {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -172,9 +219,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-    width:80%;
+        width: 80%;
     }
-    
+
     #rural {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -182,9 +229,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-    width:80%;
+        width: 80%;
     }
-    
+
     #cielo-limpio {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -192,51 +239,57 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-        width:80%;
+        width: 80%;
     }
-    
+
     .p__right {
         width: 40%;
         margin-left: 3%;
-    margin-top: auto;
-    margin-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    
+
     .p__left {
         width: 40%;
-        margin-right:3%;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+        margin-right: 3%;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
-    .img__left{
-    width:40%;
-    margin-right:3%
+
+    .img__left {
+        width: 40%;
+        margin-right: 3%
     }
-    .img__right{
-        width:40%;
+
+    .img__right {
+        width: 40%;
         margin-left: 6%;
     }
-    .img__left img{
-    width:100%;
+
+    .img__left img {
+        width: 100%;
     }
-    .img__right img{
-        width:100%;
+
+    .img__right img {
+        width: 100%;
     }
-    #sub__left{
-    text-align: left;
-    padding-left:2%;
+
+    #sub__left {
+        text-align: left;
+        padding-left: 2%;
     }
-    #sub__right{
-    
-    }
-    #main__servicio{
+
+    #sub__right {}
+
+    #main__servicio {
         margin-left: auto;
         margin-right: auto;
         padding-left: 22.5%;
         width: 90%;
-        
+
     }
+
     /*donde-estamos*/
     #de__titulo {
         color: white;
@@ -244,28 +297,29 @@ body {
         text-align: center;
         margin-top: 2%;
     }
-    
+
     #de__mapa {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 3%;
     }
-    
+
     #mapa {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #de__parrafo {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         line-height: 1.6;
         text-align: center;
         margin-top: 1%;
-    
+
     }
+
     /*contacto*/
     form {
         width: 100%;
@@ -278,83 +332,95 @@ body {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         font-size: larger;
-      padding: 1%;
-        
-        
-        
+        padding: 1%;
+
+
+
     }
-    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited {
         background-color: #5e5e5e !important;
         border: 1px solid white !important;
     }
-    .main__contacto{
+
+    .main__contacto {
         padding-left: 33%;
         padding-right: 33%;
         margin-top: 5%;
     }
-    
+
     #contactate {
-        
+
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
     }
-    #nombre{
-    
-         color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
-        }
-    #mail{
-    
-    
-         color: black;
+
+    #nombre {
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
-    #tel{
-    
-    
-         color: black;
+
+    #mail {
+
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
+
+    #tel {
+
+
+        color: black;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
     #comentario {
-       
-        
-         color: black;
+
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
-    
+
     #submit {
         margin-top: 40px;
     }
+
     fieldset {
         color: white;
         border-radius: 7px;
-        
+
     }
-    #fieldset__contacto{
-    text-align: left;
-    padding: 2%;
+
+    #fieldset__contacto {
+        text-align: left;
+        padding: 2%;
     }
-    
-    
-    
+
+
+
     .nav__links--li:hover {
         background-image: linear-gradient(to right, rgb(74, 74, 74), rgb(39, 39, 39));
-        color:white;
-        text-decoration:none;
-       
+        color: white;
+        text-decoration: none;
+
     }
+
     footer {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -364,124 +430,146 @@ body {
         padding-top: 45px;
         padding-bottom: 45px;
         text-align: center;
-        position:relative;
+        position: relative;
         bottom: 0;
         z-index: -1;
-        margin-top:10%;
-       
-       
-    
-    
+        margin-top: 10%;
+
+
+
+
     }
+
     footer li {
-       
+
         margin-left: auto;
         margin-right: auto;
         list-style: none;
-        
+
     }
-    .navbar{
-       background-color: rgb(0, 0, 0);
-       color: white;
+
+    .navbar {
+        background-color: rgb(0, 0, 0);
+        color: white;
     }
-    .navbar-toggler-div{
-        background-color:rgb(78, 78, 78);
+
+    .navbar-toggler-div {
+        background-color: rgb(78, 78, 78);
         border-radius: 9px;
     }
-    .navbar-toggler-div:hover{
+
+    .navbar-toggler-div:hover {
         border: 1px solid white;
     }
-    .offcanvas-body{
+
+    .offcanvas-body {
         background-color: rgb(29, 29, 29);
     }
-    .navbar__links--li:hover{
+
+    .navbar__links--li:hover {
         background-image: linear-gradient(to right, rgb(78, 78, 78), rgb(39, 39, 39));
-        color:white;
+        color: white;
     }
-    .navbar-nav{
+
+    .navbar-nav {
         justify-content: end;
-        flex-grow: 1; 
-        }
-      
-        .offcanvas-header{
-            background-image:linear-gradient(to bottom, black, rgb(22, 22, 22));
-        }
-        .btn-close-div{
-            background-color: rgb(78, 78, 78);
-            border-radius: 10px;
-            width: 10%;
-            height: 20px;
-            justify-content: center;
-             
-        }
-        .btn-close-div:hover{
-            border: 1px solid white;
-        }
-        .btn-close{
-           margin-top: auto;
-           margin-bottom: auto;
-            
-            
-        }
-       .navbar img {
-            position: absolute;
-            margin-top: auto;
-           justify-content: center;       
-            width: 10%;
-            height: auto;
-        
-        }
-        .header-navbar{
-            
-            margin-top: auto;
-        }
-        .navbar__links--li{
-            height: 20%;
-            text-align: right;
-            padding: 15px;
-            
-            
-        }
-        .navbar__links--li li{
-            list-style: none;
-        }
-    .home-grid{
-        display:grid;
-        height:740;
-        grid-template-rows: 100px 460px 180px ;
+        flex-grow: 1;
+    }
+
+    .offcanvas-header {
+        background-image: linear-gradient(to bottom, black, rgb(22, 22, 22));
+    }
+
+    .btn-close-div {
+        background-color: rgb(78, 78, 78);
+        border-radius: 10px;
+        width: 10%;
+        height: 20px;
+        justify-content: center;
+
+    }
+
+    .btn-close-div:hover {
+        border: 1px solid white;
+    }
+
+    .btn-close {
+        margin-top: auto;
+        margin-bottom: auto;
+
+
+    }
+
+    .navbar img {
+        position: absolute;
+        margin-top: auto;
+        justify-content: center;
+        width: 10%;
+        height: auto;
+
+    }
+
+    .header-navbar {
+
+        margin-top: auto;
+    }
+    .header-navbar img {
+        min-width: 161.3px;
+        min-height: 19.89px;
+
+
+    }
+    .navbar__links--li {
+        height: 20%;
+        text-align: right;
+        padding: 15px;
+
+
+    }
+
+    .navbar__links--li li {
+        list-style: none;
+    }
+
+    .home-grid {
+        display: grid;
+        height: 740;
+        grid-template-rows: 100px 460px 180px;
         justify-content: center;
         align-content: center;
     }
-    
-    .h-grid-h1{
-    grid-row: 1 / 2;
+
+    .h-grid-h1 {
+        grid-row: 1 / 2;
     }
-    .h-grid-img{
-    grid-row: 2 / 3;
+
+    .h-grid-img {
+        grid-row: 2 / 3;
     }
-    .h-grid-p{
-    grid-row: 3 / 4;
+
+    .h-grid-p {
+        grid-row: 3 / 4;
     }
 }
-  
 
 
 
 
-@media  (max-width: 1620px) {
+
+@media (min-width:992px) and (max-width: 1620px) {
     #qs__main {
         height: 46rem;
-       
+
     }
-    
+
     nav {
         width: 100%;
         height: 6rem;
         background-color: black;
-        color:white;
+        color: white;
         overflow: hidden;
     }
-    
+
     nav a {
         width: 80px;
         padding: 20px;
@@ -490,42 +578,49 @@ body {
         text-align: center;
         height: 20px;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     #header__navbar {
         position: fixed;
         top: 0;
         border-bottom: 1px solid rgb(29, 29, 29);
         background-color: black;
-        
+
     }
-    
-    
+
+
+
     #intro-home {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 60px;
-        margin-top: 60px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: grid;
         width: 50%;
         line-height: 1.6;
     }
-    
+
     #intro-home p {
         margin-top: 25px;
         font-size: larger;
-    
+        margin-top: auto;
+        margin-bottom: auto;
+
+
     }
-    
+
     #intro-home img {
         width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    
+
     #home__header {
         background-image: url("../img/b3.webp");
         background-repeat: no-repeat;
@@ -534,19 +629,56 @@ body {
         background-size: 110% 50%;
         height: 700px;
         margin-top: 0;
-    
+
     }
-    
-    
-    
+
+
+
+    .home-grid {
+        display: grid;
+        height: 740;
+        grid-template-rows: 100px 300px 180px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    .h-grid-h1 {
+        grid-row: 1 / 2;
+    }
+
+    .h-grid-img {
+        grid-row: 2 / 3;
+    }
+
+    .h-grid-p {
+        grid-row: 3 / 4;
+    }
+
     .titulo-principal {
         font-family: 'monserrat', sans-serif;
         color: white;
         text-align: center;
-        margin-top: 80px;
+        margin-top: auto;
+        margin-bottom: auto;
         text-decoration: none;
-    
+        padding-top: auto;
+        padding-bottom: auto;
+
     }
+
+    #intro-home-h1 {
+        font-family: 'monserrat', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration: none;
+        padding-top: auto;
+        padding-bottom: auto;
+
+    }
+
     /*quienes-somos*/
     #qs__heading {
         text-align: center;
@@ -556,32 +688,32 @@ body {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-    
+
     }
-    
+
     #qs__heading h1 {
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    
+
     #qs__heading p {
         line-height: 1.6;
     }
-    
+
     #qs__titulo {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-    
-    
+
+
     }
-    
+
     .qs__p {
         color: white;
         line-height: 1.6;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-    
+
     }
-    
+
     .qs__video {
         color: white;
         line-height: 1.6;
@@ -592,25 +724,26 @@ body {
         padding: 10px;
         width: 40%;
     }
-    
+
     #video {
         padding: 0px 0px 7px 0px;
         border-bottom: 2px solid white;
         margin-left: auto;
         margin-right: auto;
-        width: 500px ;
-        height:270px;
+        width: 500px;
+        height: 270px;
     }
-    
+
     .qs__video h2 {
         margin-bottom: 20px;
     }
-    
+
     .qs__video p {
         margin-top: 30px;
         margin-bottom: 120px;
-    
+
     }
+
     /*Servicio*/
     .subtitulo__servicio {
         color: white;
@@ -619,7 +752,7 @@ body {
         margin-bottom: 1%;
         text-align: center;
     }
-    
+
     #velocidad {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -627,9 +760,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-    width:80%;
+        width: 80%;
     }
-    
+
     #rural {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -637,9 +770,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-    width:80%;
+        width: 80%;
     }
-    
+
     #cielo-limpio {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -647,51 +780,57 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-        width:80%;
+        width: 80%;
     }
-    
+
     .p__right {
         width: 40%;
         margin-left: 3%;
-    margin-top: auto;
-    margin-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    
+
     .p__left {
         width: 40%;
-        margin-right:3%;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+        margin-right: 3%;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
-    .img__left{
-    width:40%;
-    margin-right:3%
+
+    .img__left {
+        width: 40%;
+        margin-right: 3%
     }
-    .img__right{
-        width:40%;
+
+    .img__right {
+        width: 40%;
         margin-left: 6%;
     }
-    .img__left img{
-    width:100%;
+
+    .img__left img {
+        width: 100%;
     }
-    .img__right img{
-        width:100%;
+
+    .img__right img {
+        width: 100%;
     }
-    #sub__left{
-    text-align: left;
-    padding-left:2%;
+
+    #sub__left {
+        text-align: left;
+        padding-left: 2%;
     }
-    #sub__right{
-    
-    }
-    #main__servicio{
+
+    #sub__right {}
+
+    #main__servicio {
         margin-left: auto;
         margin-right: auto;
         padding-left: 22.5%;
         width: 90%;
-        
+
     }
+
     /*donde-estamos*/
     #de__titulo {
         color: white;
@@ -699,28 +838,29 @@ body {
         text-align: center;
         margin-top: 2%;
     }
-    
+
     #de__mapa {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 3%;
     }
-    
+
     #mapa {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #de__parrafo {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         line-height: 1.6;
         text-align: center;
         margin-top: 1%;
-    
+
     }
+
     /*contacto*/
     form {
         width: 100%;
@@ -733,83 +873,95 @@ body {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         font-size: larger;
-      padding: 1%;
-        
-        
-        
+        padding: 1%;
+
+
+
     }
-    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited {
         background-color: #5e5e5e !important;
         border: 1px solid white !important;
     }
-    .main__contacto{
+
+    .main__contacto {
         padding-left: 33%;
         padding-right: 33%;
         margin-top: 5%;
     }
-    
+
     #contactate {
-        
+
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
     }
-    #nombre{
-    
-         color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
-        }
-    #mail{
-    
-    
-         color: black;
+
+    #nombre {
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
-    #tel{
-    
-    
-         color: black;
+
+    #mail {
+
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
+
+    #tel {
+
+
+        color: black;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
     #comentario {
-       
-        
-         color: black;
+
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
-    
+
     #submit {
         margin-top: 40px;
     }
+
     fieldset {
         color: white;
         border-radius: 7px;
-        
+
     }
-    #fieldset__contacto{
-    text-align: left;
-    padding: 2%;
+
+    #fieldset__contacto {
+        text-align: left;
+        padding: 2%;
     }
-    
-    
-    
+
+
+
     .nav__links--li:hover {
         background-image: linear-gradient(to right, rgb(74, 74, 74), rgb(39, 39, 39));
-        color:white;
-        text-decoration:none;
-       
+        color: white;
+        text-decoration: none;
+
     }
+
     footer {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -819,122 +971,138 @@ body {
         padding-top: 45px;
         padding-bottom: 45px;
         text-align: center;
-        position:relative;
+        position: relative;
         bottom: 0;
         z-index: -1;
-        margin-top:10%;
-       
-       
-    
-    
+        margin-top: 10%;
+
+
+
+
     }
+
     footer li {
-       
+
         margin-left: auto;
         margin-right: auto;
         list-style: none;
-        
+
     }
-    .navbar{
-       background-color: rgb(0, 0, 0);
-       color: white;
+
+    .navbar {
+        background-color: rgb(0, 0, 0);
+        color: white;
     }
-    .navbar-toggler-div{
-        background-color:rgb(78, 78, 78);
+
+    .navbar-toggler-div {
+        background-color: rgb(78, 78, 78);
         border-radius: 10px;
     }
-    .offcanvas-body{
+
+    .offcanvas-body {
         background-color: rgb(26, 26, 26);
     }
-    .navbar-nav{
+
+    .navbar-nav {
         justify-content: end;
-        flex-grow: 1; 
-        }
-      
-        .offcanvas-header{
-            background-color: black;
-        }
-        .btn-close-div{
-            background-color: rgb(78, 78, 78);
-            border-radius: 10px;
-            width: 10%;
-            height: 20px;
-            justify-content: center;
-             
-        }
-        .btn-close{
-           margin-top: auto;
-           margin-bottom: auto;
-            
-            
-        }
-       .navbar img {
-            position: absolute;
-            margin-top: auto;
-           justify-content: center;       
-            width: 10%;
-            height: auto;
-        
-        }
-        .header-navbar{
-            
-            margin-top: auto;
-        }
-        .header-navbar img{
-            min-width: 161.3px;
-            min-height: 19.89px;
-            
-     
-         }
-        .navbar__links--li{
-            height: 20%;
-            text-align: right;
-            padding: 15px;
-            
-            
-        }
-        .navbar__links--li li{
-            list-style: none;
-        }
-    .home-grid{
-        display:grid;
-        height:740;
-        grid-template-rows: 100px 460px 180px ;
+        flex-grow: 1;
+    }
+
+    .offcanvas-header {
+        background-color: black;
+    }
+
+    .btn-close-div {
+        background-color: rgb(78, 78, 78);
+        border-radius: 10px;
+        width: 10%;
+        height: 20px;
+        justify-content: center;
+
+    }
+
+    .btn-close {
+        margin-top: auto;
+        margin-bottom: auto;
+
+
+    }
+
+    .navbar img {
+        position: absolute;
+        margin-top: auto;
+        justify-content: center;
+        width: 10%;
+        height: auto;
+
+    }
+
+    .header-navbar {
+
+        margin-top: auto;
+    }
+
+    .header-navbar img {
+        min-width: 161.3px;
+        min-height: 19.89px;
+
+
+    }
+
+    .navbar__links--li {
+        height: 20%;
+        text-align: right;
+        padding: 15px;
+
+
+    }
+
+    .navbar__links--li li {
+        list-style: none;
+    }
+
+    .home-grid {
+        display: grid;
+        height: 740;
+        grid-template-rows: 100px 460px 180px;
         justify-content: center;
         align-content: center;
     }
-    
-    .h-grid-h1{
-    grid-row: 1 / 2;
-    }
-    .h-grid-img{
-    grid-row: 2 / 3;
-    }
-    .h-grid-p{
-    grid-row: 3 / 4;
+
+    .h-grid-h1 {
+        grid-row: 1 / 2;
     }
 
-/*Incluir esto...*/
- 
+    .h-grid-img {
+        grid-row: 2 / 3;
+    }
 
-    
-    
+    .h-grid-p {
+        grid-row: 3 / 4;
+    }
+
+    /*Incluir esto...*/
+
+
+
+
 }
+
 /*BREAK*/
-    @media (min-width:150px) and (max-width:390px) {
+@media (min-width:150px) and (max-width:576px) {
     #qs__main {
         height: 46rem;
-       
+
     }
-    
+
     nav {
         width: 100%;
         height: 6rem;
         background-color: black;
-        color:white;
+        color: white;
         overflow: hidden;
     }
-    
+
     nav a {
         width: 80px;
         padding: 20px;
@@ -943,62 +1111,103 @@ body {
         text-align: center;
         height: 20px;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     #header__navbar {
         position: fixed;
         top: 0;
         border-bottom: 1px solid rgb(29, 29, 29);
         background-color: black;
-        
+
     }
-    
-    
+
+
     #intro-home {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 60px;
-        margin-top: 60px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: grid;
         width: 50%;
         line-height: 1.6;
     }
-    
+
     #intro-home p {
-        margin-top: 25px;
-        font-size: larger;
-    
+
+        font-size: 14px;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
-    
+
     #intro-home img {
         width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    
+
     #home__header {
         background-image: url("../img/b3.webp");
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: 50%;
+        background-position: 50% 10%;
         background-size: 110%;
-        height: 800px;
-    
+        height: 400px;
+        
+
     }
-    
-    
-    
+
+    .home-grid {
+        display: grid;
+        height: 740;
+        grid-template-rows: 100px 300px 180px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    .h-grid-h1 {
+        grid-row: 1 / 2;
+    }
+
+    .h-grid-img {
+        grid-row: 2 / 3;
+    }
+
+    .h-grid-p {
+        grid-row: 3 / 4;
+    }
+
     .titulo-principal {
         font-family: 'monserrat', sans-serif;
         color: white;
         text-align: center;
-        margin-top: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
         text-decoration: none;
-    
+        padding-top: auto;
+        padding-bottom: auto;
+
     }
+
+    #intro-home-h1 {
+        font-family: 'monserrat', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration: none;
+        padding-top: auto;
+        padding-bottom: auto;
+
+    }
+
     /*quienes-somos*/
     #qs__heading {
         text-align: center;
@@ -1008,32 +1217,32 @@ body {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-    
+
     }
-    
+
     #qs__heading h1 {
         margin-top: 30px;
         margin-bottom: 20px;
     }
-    
+
     #qs__heading p {
         line-height: 1.6;
     }
-    
+
     #qs__titulo {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-    
-    
+
+
     }
-    
+
     .qs__p {
         color: white;
         line-height: 1.6;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-    
+
     }
-    
+
     .qs__video {
         color: white;
         line-height: 1.6;
@@ -1044,7 +1253,7 @@ body {
         padding: 10px;
         width: 40%;
     }
-    
+
     #video {
         padding: 0px 0px 7px 0px;
         border-bottom: 2px solid white;
@@ -1053,16 +1262,17 @@ body {
         width: 100px;
         height: 40px;
     }
-    
+
     .qs__video h2 {
         margin-bottom: 20px;
     }
-    
+
     .qs__video p {
         margin-top: 30px;
         margin-bottom: 120px;
-    
+
     }
+
     /*Servicio*/
     .subtitulo__servicio {
         color: white;
@@ -1071,7 +1281,7 @@ body {
         margin-bottom: 1%;
         text-align: center;
     }
-    
+
     #velocidad {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -1079,9 +1289,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-    width:80%;
+        width: 80%;
     }
-    
+
     #rural {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -1089,9 +1299,9 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-    width:80%;
+        width: 80%;
     }
-    
+
     #cielo-limpio {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -1099,51 +1309,57 @@ body {
         margin-left: auto;
         margin-right: auto;
         display: inline-flex;
-        width:80%;
+        width: 80%;
     }
-    
+
     .p__right {
         width: 40%;
         margin-left: 3%;
-    margin-top: auto;
-    margin-bottom: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
-    
+
     .p__left {
         width: 40%;
-        margin-right:3%;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+        margin-right: 3%;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
-    .img__left{
-    width:40%;
-    margin-right:3%
+
+    .img__left {
+        width: 40%;
+        margin-right: 3%
     }
-    .img__right{
-        width:40%;
+
+    .img__right {
+        width: 40%;
         margin-left: 6%;
     }
-    .img__left img{
-    width:100%;
+
+    .img__left img {
+        width: 100%;
     }
-    .img__right img{
-        width:100%;
+
+    .img__right img {
+        width: 100%;
     }
-    #sub__left{
-    text-align: left;
-    padding-left:2%;
+
+    #sub__left {
+        text-align: left;
+        padding-left: 2%;
     }
-    #sub__right{
-    
-    }
-    #main__servicio{
+
+    #sub__right {}
+
+    #main__servicio {
         margin-left: auto;
         margin-right: auto;
         padding-left: 22.5%;
         width: 90%;
-        
+
     }
+
     /*donde-estamos*/
     #de__titulo {
         color: white;
@@ -1151,28 +1367,29 @@ body {
         text-align: center;
         margin-top: 2%;
     }
-    
+
     #de__mapa {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 3%;
     }
-    
+
     #mapa {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #de__parrafo {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         line-height: 1.6;
         text-align: center;
         margin-top: 1%;
-    
+
     }
+
     /*contacto*/
     form {
         width: 100%;
@@ -1185,82 +1402,95 @@ body {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         font-size: larger;
-      padding: 1%;
-        
-        
-        
+        padding: 1%;
+
+
+
     }
-    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited {
         background-color: #5e5e5e !important;
         border: 1px solid white !important;
     }
-    .main__contacto{
+
+    .main__contacto {
         padding-left: 33%;
         padding-right: 33%;
         margin-top: 5%;
     }
+
     #contactate {
-        
+
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
     }
-    #nombre{
-    
-         color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
-        }
-    #mail{
-    
-    
-         color: black;
+
+    #nombre {
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
-    #tel{
-    
-    
-         color: black;
+
+    #mail {
+
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
+
+    #tel {
+
+
+        color: black;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
     #comentario {
-       
-        
-         color: black;
+
+
+        color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
-    
+
     #submit {
         margin-top: 40px;
     }
+
     fieldset {
         color: white;
         border-radius: 7px;
-        
+
     }
-    #fieldset__contacto{
-    text-align: left;
-    padding: 2%;
+
+    #fieldset__contacto {
+        text-align: left;
+        padding: 2%;
     }
-    
-    
-    
+
+
+
     .nav__links--li:hover {
         background-image: linear-gradient(to right, rgb(74, 74, 74), rgb(39, 39, 39));
-        color:white;
-        text-decoration:none;
-       
+        color: white;
+        text-decoration: none;
+
     }
+
     footer {
         color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -1270,122 +1500,601 @@ body {
         padding-top: 45px;
         padding-bottom: 45px;
         text-align: center;
-        position:relative;
+        position: relative;
         bottom: 0;
         z-index: -1;
-        margin-top:10%;
-       
-       
-    
-    
+        margin-top: 10%;
+
+
+
+
     }
+
     footer li {
-       
+
         margin-left: auto;
         margin-right: auto;
         list-style: none;
-        
+
     }
-    .navbar{
-       background-color: rgb(0, 0, 0);
-       color: white;
+
+    .navbar {
+        background-color: rgb(0, 0, 0);
+        color: white;
     }
-    .navbar-toggler-div{
-        background-color:rgb(78, 78, 78);
+
+    .navbar-toggler-div {
+        background-color: rgb(78, 78, 78);
         border-radius: 10px;
     }
-    .offcanvas-body{
+
+    .offcanvas-body {
         background-color: rgb(26, 26, 26);
     }
-    .navbar-nav{
+
+    .navbar-nav {
         justify-content: end;
-        flex-grow: 1; 
-        }
-      
-        .offcanvas-header{
-            background-color: black;
-        }
-        .btn-close-div{
-            background-color: rgb(78, 78, 78);
-            border-radius: 10px;
-            width: 10%;
-            height: 20px;
-            justify-content: center;
-             
-        }
-        .btn-close{
-           margin-top: auto;
-           margin-bottom: auto;
-            
-            
-        }
-       .navbar img {
-            position: absolute;
-            margin-top: auto;
-           justify-content: center;       
-            width: 10%;
-            height: auto;
-        
-        }
-        
-        .header-navbar{
-            
-            margin-top: auto;
-        }
-        .navbar__links--li{
-            height: 20%;
-            text-align: right;
-            padding: 15px;
-            
-            
-        }
-        .navbar__links--li li{
-            list-style: none;
-        }
-    .home-grid{
-        display:grid;
-        height:740;
-        grid-template-rows: 100px 460px 180px ;
+        flex-grow: 1;
+    }
+
+    .offcanvas-header {
+        background-color: black;
+    }
+
+    .btn-close-div {
+        background-color: rgb(78, 78, 78);
+        border-radius: 10px;
+        width: 10%;
+        height: 20px;
         justify-content: center;
-        align-content: center;
+
     }
-    
-    .h-grid-h1{
-    grid-row: 1 / 2;
+
+    .btn-close {
+        margin-top: auto;
+        margin-bottom: auto;
+
+
     }
-    .h-grid-img{
-    grid-row: 2 / 3;
+
+    .navbar img {
+        position: absolute;
+        margin-top: auto;
+        justify-content: center;
+        width: 10%;
+        height: auto;
+
     }
-    .h-grid-p{
-    grid-row: 3 / 4;
+
+    .header-navbar {
+
+        margin-top: auto;
     }
- 
+    .header-navbar img {
+        min-width: 161.3px;
+        min-height: 19.89px;
+
+
+    }
+    .navbar__links--li {
+        height: 20%;
+        text-align: right;
+        padding: 15px;
+
+
+    }
+
+    .navbar__links--li li {
+        list-style: none;
+    }
+
+
+
     /*reemplazar con...*/
-   
-   
+
+
 
 }
-   @media screen and (max-width:768px) {
+
+@media (min-width:577px) and (max-width:991px) {
+
+    #qs__main {
+        height: 46rem;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 6rem;
+        background-color: black;
+        color: white;
+        overflow: hidden;
+    }
+
+    nav a {
+        width: 80px;
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        height: 20px;
+    }
+
+
+
+
+
+    #header__navbar {
+        position: fixed;
+        top: 0;
+        border-bottom: 1px solid rgb(29, 29, 29);
+        background-color: black;
+
+    }
+
+
+    #intro-home {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: grid;
+        width: 50%;
+        line-height: 1.6;
+    }
+
+    #intro-home p {
+
+        font-size: 14px;
+        margin-top: auto;
+        margin-bottom: auto;
+
+    }
+
+    #intro-home img {
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     #home__header {
         background-image: url("../img/b3.webp");
         background-repeat: no-repeat;
-        background-attachment:fixed;
-        background-position:static;
-        background-position: 50% 5%;
-        background-size: 100%;
-        height: 400px;
-        margin-top: 0%;
-        margin-bottom: 0;
-       
-    
+        background-attachment: fixed;
+        background-position: 50% 15%;
+        background-size: 110%;
+        height: 800px;
+
     }
+
+    .home-grid {
+        display: grid;
+        height: 740;
+        grid-template-rows: 100px 300px 180px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    .h-grid-h1 {
+        grid-row: 1 / 2;
+    }
+
+    .h-grid-img {
+        grid-row: 2 / 3;
+    }
+
+    .h-grid-p {
+        grid-row: 3 / 4;
+    }
+
     .titulo-principal {
         font-family: 'monserrat', sans-serif;
         color: white;
         text-align: center;
-        margin-top: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
         text-decoration: none;
-    
+        padding-top: auto;
+        padding-bottom: auto;
+
     }
-   }
-  
+
+    #intro-home-h1 {
+        font-family: 'monserrat', sans-serif;
+        color: white;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-decoration: none;
+        padding-top: auto;
+        padding-bottom: auto;
+
+    }
+
+    /*quienes-somos*/
+    #qs__heading {
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 5%;
+        padding: 12px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #qs__heading h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #qs__heading p {
+        line-height: 1.6;
+    }
+
+    #qs__titulo {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+
+
+    }
+
+    .qs__p {
+        color: white;
+        line-height: 1.6;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+
+    }
+
+    .qs__video {
+        color: white;
+        line-height: 1.6;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 10px;
+        width: 40%;
+    }
+
+    #video {
+        padding: 0px 0px 7px 0px;
+        border-bottom: 2px solid white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: 40px;
+    }
+
+    .qs__video h2 {
+        margin-bottom: 20px;
+    }
+
+    .qs__video p {
+        margin-top: 30px;
+        margin-bottom: 120px;
+
+    }
+
+    /*Servicio*/
+    .subtitulo__servicio {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 3%;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    #velocidad {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        line-height: 1.6;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
+        width: 80%;
+    }
+
+    #rural {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        line-height: 1.6;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
+        width: 80%;
+    }
+
+    #cielo-limpio {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        line-height: 1.6;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
+        width: 80%;
+    }
+
+    .p__right {
+        width: 40%;
+        margin-left: 3%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .p__left {
+        width: 40%;
+        margin-right: 3%;
+        margin-top: auto;
+        margin-bottom: auto;
+
+    }
+
+    .img__left {
+        width: 40%;
+        margin-right: 3%
+    }
+
+    .img__right {
+        width: 40%;
+        margin-left: 6%;
+    }
+
+    .img__left img {
+        width: 100%;
+    }
+
+    .img__right img {
+        width: 100%;
+    }
+
+    #sub__left {
+        text-align: left;
+        padding-left: 2%;
+    }
+
+    #sub__right {}
+
+    #main__servicio {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 22.5%;
+        width: 90%;
+
+    }
+
+    /*donde-estamos*/
+    #de__titulo {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    #de__mapa {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+    }
+
+    #mapa {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #de__parrafo {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        line-height: 1.6;
+        text-align: center;
+        margin-top: 1%;
+
+    }
+
+    /*contacto*/
+    form {
+        width: 100%;
+        line-height: 2;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+        margin-bottom: 10%;
+        background-color: rgb(20, 20, 20);
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-size: larger;
+        padding: 1%;
+
+
+
+    }
+
+    .btn-primary,
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary:visited {
+        background-color: #5e5e5e !important;
+        border: 1px solid white !important;
+    }
+
+    .main__contacto {
+        padding-left: 33%;
+        padding-right: 33%;
+        margin-top: 5%;
+    }
+
+    #contactate {
+
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+    }
+
+    #nombre {
+
+        color: black;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
+    #mail {
+
+
+        color: black;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
+    #tel {
+
+
+        color: black;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
+    #comentario {
+
+
+        color: black;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        display: block;
+    }
+
+    #submit {
+        margin-top: 40px;
+    }
+
+    fieldset {
+        color: white;
+        border-radius: 7px;
+
+    }
+
+    #fieldset__contacto {
+        text-align: left;
+        padding: 2%;
+    }
+
+
+
+    .nav__links--li:hover {
+        background-image: linear-gradient(to right, rgb(74, 74, 74), rgb(39, 39, 39));
+        color: white;
+        text-decoration: none;
+
+    }
+
+    footer {
+        color: white;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        width: 100%;
+        height: 90px;
+        background-color: black;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        z-index: -1;
+        margin-top: 10%;
+
+
+
+
+    }
+
+    footer li {
+
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+
+    }
+
+    .navbar {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    .navbar-toggler-div {
+        background-color: rgb(78, 78, 78);
+        border-radius: 10px;
+    }
+
+    .offcanvas-body {
+        background-color: rgb(26, 26, 26);
+    }
+
+    .navbar-nav {
+        justify-content: end;
+        flex-grow: 1;
+    }
+
+    .offcanvas-header {
+        background-color: black;
+    }
+
+    .btn-close-div {
+        background-color: rgb(78, 78, 78);
+        border-radius: 10px;
+        width: 10%;
+        height: 20px;
+        justify-content: center;
+
+    }
+
+    .btn-close {
+        margin-top: auto;
+        margin-bottom: auto;
+
+
+    }
+
+    .navbar img {
+        position: absolute;
+        margin-top: auto;
+        justify-content: center;
+        width: 10%;
+        height: auto;
+
+    }
+
+    .header-navbar {
+
+        margin-top: auto;
+    }
+    .header-navbar img {
+        min-width: 161.3px;
+        min-height: 19.89px;
+
+
+    }
+    .navbar__links--li {
+        height: 20%;
+        text-align: right;
+        padding: 15px;
+
+
+    }
+
+    .navbar__links--li li {
+        list-style: none;
+    }
+
+
+
+}
