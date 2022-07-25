@@ -132,6 +132,8 @@ body {
   .qs__video p {
     margin-top: 30px;
     margin-bottom: 120px; }
+  #youtube {
+    display: none; }
   /*Servicio*/
   .subtitulo__servicio {
     color: white;
@@ -472,6 +474,8 @@ body {
   .qs__video p {
     margin-top: 30px;
     margin-bottom: 120px; }
+  #youtube {
+    display: none; }
   /*Servicio*/
   .subtitulo__servicio {
     color: white;
@@ -684,10 +688,9 @@ body {
     grid-row: 3 / 4; }
   /*Incluir esto...*/ }
 
-/*BREAK*/
 @media (min-width: 150px) and (max-width: 576px) {
   #qs__main {
-    height: 46rem; }
+    max-height: 90rem; }
   nav {
     width: 100%;
     height: 6rem;
@@ -791,20 +794,24 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 10px;
-    width: 40%; }
+    padding: 05px;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 100px 40px 500px; }
+    .qs__video_title {
+      margin-bottom: 20px;
+      grid-row: 1 / 2; }
   #video {
-    padding: 0px 0px 7px 0px;
-    border-bottom: 2px solid white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 40px; }
-  .qs__video h2 {
-    margin-bottom: 20px; }
-  .qs__video p {
+    display: none; }
+  iframe {
+    display: none; }
+  .qs__video_p {
     margin-top: 30px;
-    margin-bottom: 120px; }
+    margin-bottom: 120px;
+    grid-row: 3 / 4; }
+  #youtube img {
+    width: 30px;
+    height: 30px; }
   /*Servicio*/
   .subtitulo__servicio {
     color: white;
@@ -1114,17 +1121,17 @@ body {
     padding: 10px;
     width: 40%; }
   #video {
-    padding: 0px 0px 7px 0px;
-    border-bottom: 2px solid white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: 40px; }
-  .qs__video h2 {
+    display: none; }
+  iframe {
+    display: none; }
+  .qs__video_title {
     margin-bottom: 20px; }
-  .qs__video p {
+  .qs__video_p {
     margin-top: 30px;
     margin-bottom: 120px; }
+  #youtube img {
+    width: 60px;
+    height: 60px; }
   /*Servicio*/
   .subtitulo__servicio {
     color: white;
@@ -1323,3 +1330,5 @@ body {
     padding: 15px; }
   .navbar__links--li li {
     list-style: none; } }
+
+/*BREAK*/
