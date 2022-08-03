@@ -344,45 +344,38 @@ display: none;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
     }
 
-    #nombre {
-
+    @mixin contacto{
         color: black;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         margin-top: 2%;
         margin-bottom: 2%;
         display: block;
     }
-
-    #mail {
-
-
-        color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
-    }
-
-    #tel {
-
-
-        color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
-    }
-
-    #comentario {
-
-
-        color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
-    }
-
+    
+        
+        #nombre {
+    
+            @include contacto;
+        }
+    
+        #mail {
+    
+    
+            @include contacto;
+        }
+    
+        #tel {
+    
+    
+            @include contacto;
+        }
+    
+        #comentario {
+    
+    
+            @include contacto;
+    
+        }
     #submit {
         margin-top: 40px;
     }

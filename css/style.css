@@ -127,9 +127,9 @@ body {
   iframe {
     width: 500px;
     height: 270px; }
-  .qs__video h2 {
+  .qs__video_title {
     margin-bottom: 20px; }
-  .qs__video p {
+  .qs__video_p {
     margin-top: 30px;
     margin-bottom: 120px; }
   #youtube {
@@ -469,9 +469,9 @@ body {
     margin-right: auto;
     width: 500px;
     height: 270px; }
-  .qs__video h2 {
+  .qs__video_title {
     margin-bottom: 20px; }
-  .qs__video p {
+  .qs__video_p {
     margin-top: 30px;
     margin-bottom: 120px; }
   #youtube {

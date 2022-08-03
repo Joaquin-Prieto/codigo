@@ -197,34 +197,35 @@
         text-align: center;
     }
 
+
     #velocidad {
         color: $color-primary;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-        line-height: 1.6;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline-flex;
-        width: 80%;
+        line-height: map-get($styles, altura);
+        margin-left: map-get($styles, margen-izq);
+        margin-right:map-get($styles, margen-der);
+        display: map-get($styles, display-flex);
+        width: map-get($styles, ancho);
     }
 
     #rural {
         color: $color-primary;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-        line-height: 1.6;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline-flex;
-        width: 80%;
+        line-height: map-get($styles, altura);
+        margin-left: map-get($styles, margen-izq);
+        margin-right:map-get($styles, margen-der);
+        display: map-get($styles, display-flex);
+        width: map-get($styles, ancho);
     }
 
     #cielo-limpio {
         color: $color-primary;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-        line-height: 1.6;
-        margin-left: auto;
-        margin-right: auto;
-        display: inline-flex;
-        width: 80%;
+        line-height: map-get($styles, altura);
+        margin-left: map-get($styles, margen-izq);
+        margin-right:map-get($styles, margen-der);
+        display: map-get($styles, display-flex);
+        width: map-get($styles, ancho);
     }
 
     .p__right {
@@ -337,49 +338,43 @@
         margin-top: 5%;
     }
 
-    #contactate {
+#contactate {
 
         color: $color-primary;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
     }
 
+@mixin contacto{
+    color: black;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: block;
+}
+
+    
     #nombre {
 
-        color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
+        @include contacto;
     }
 
     #mail {
 
 
-        color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
+        @include contacto;
     }
 
     #tel {
 
 
-        color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
+        @include contacto;
     }
 
     #comentario {
 
 
-        color: black;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        display: block;
+        @include contacto;
+
     }
 
     #submit {
