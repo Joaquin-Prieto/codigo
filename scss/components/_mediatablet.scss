@@ -1,7 +1,7 @@
 @media (min-width:577px) and (max-width:991px) {
 
     #qs__main {
-        height: 46rem;
+        max-height: 1900px;
 
     }
 
@@ -13,15 +13,7 @@
         overflow: hidden;
     }
 
-    nav a {
-        width: 80px;
-        padding: 20px;
-        text-decoration: none;
-        color: $color-primary;
-        text-align: center;
-        height: 20px;
-    }
-
+   
 
 
 
@@ -185,94 +177,137 @@ iframe{
         height: 60px;
     }
     /*Servicio*/
-    .subtitulo__servicio {
-        color: $color-primary;
+    @mixin grids {
+        color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
-        margin-top: 3%;
-        margin-bottom: 1%;
-        text-align: center;
-    }
-
-
-
-    #velocidad {
-        color: $color-primary;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        line-height: map-get($styles, altura);
-        margin-left: map-get($styles, margen-izq);
-        margin-right:map-get($styles, margen-der);
-        display: map-get($styles, display-flex);
-        width: map-get($styles, ancho);
-    }
-
-    #rural {
-        color: $color-primary;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        line-height: map-get($styles, altura);
-        margin-left: map-get($styles, margen-izq);
-        margin-right:map-get($styles, margen-der);
-        display: map-get($styles, display-flex);
-        width: map-get($styles, ancho);
-    }
-
-    #cielo-limpio {
-        color: $color-primary;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        line-height: map-get($styles, altura);
-        margin-left: map-get($styles, margen-izq);
-        margin-right:map-get($styles, margen-der);
-        display: map-get($styles, display-flex);
-        width: map-get($styles, ancho);
-    }
-
-    .p__right {
-        width: 40%;
-        margin-left: 3%;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    .p__left {
-        width: 40%;
-        margin-right: 3%;
-        margin-top: auto;
-        margin-bottom: auto;
-
-    }
-
-    .img__left {
-        width: 40%;
-        margin-right: 3%
-    }
-
-    .img__right {
-        width: 40%;
-        margin-left: 6%;
-    }
-
-    .img__left img {
-        width: 100%;
-    }
-
-    .img__right img {
-        width: 100%;
-    }
-
-    #sub__left {
-        text-align: left;
-        padding-left: 2%;
-    }
-
-    #sub__right {}
-
-    #main__servicio {
+        line-height: 1.6;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 22.5%;
-        width: 90%;
-
+        width: 80%;
+        text-align: center;
+        
+      }
+      .servicio-grid{
+        margin-top: 7%;
+        display: grid;
+        grid-template-rows: 400px 400px 200px 400px 200px 400px 0px;
+        grid-row-gap:5% ;
     }
-
+    
+        .subtitulo__servicio {
+            color: white;
+            font-family: 'IBM Plex Sans Condensed', sans-serif;
+            margin-top: 3%;
+            margin-bottom: 1%;
+            text-align: center;
+        }
+    
+        
+    
+      
+    
+      
+    
+        .p__right {
+            width: 40%;
+            margin-left: 3%;
+            margin-top: auto;
+            margin-bottom: auto;
+            grid-row: 3 / 4;
+            
+            @include grids;
+        }
+    
+        .p__left_one {
+            width: 40%;
+            margin-right: 3%;
+            margin-top: auto;
+            margin-bottom: auto;
+        grid-row-start:1;
+        grid-row-end: 2;
+       
+        @include grids;
+        }
+        .p__left_two {
+            width: 40%;
+            margin-right: 3%;
+            margin-top: auto;
+            margin-bottom: auto;
+            grid-row:5 / 6  ;
+           
+            @include grids;
+    
+        }
+    
+        #img__right_one{
+            width: 80%;
+            height: 353.11px;
+            grid-row: 2 / 3;
+            
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        }
+        #img__right_two{
+            width: 80%;
+            height: 326.63px;
+            grid-row: 6 / 7;
+            
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+        .img__left {
+            width: 80%;
+            height: 341.73;
+            grid-row: 4 / 5;
+            
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+    
+        #img__right_one img {
+            width: 100%;
+           
+        }
+        #img__right_two img {
+            width: 100%;
+        }
+    
+        .img__left img {
+            width: 100%;
+        }
+    
+        #sub__left {
+            text-align: center;
+            margin-bottom: 5%;
+            
+        }
+        #sub__left_two {
+            text-align: center;
+            margin-bottom: 5%;
+            
+        }
+    
+        #sub__right {
+            text-align: center;
+            margin-bottom: 5%;
+        }
+    
+        #main__servicio {
+            margin-left: auto;
+            margin-right: auto;
+            height: 2500px;
+            width: 90%;
+    
+        }
     /*donde-estamos*/
     #de__titulo {
         color: $color-primary;
@@ -398,7 +433,7 @@ iframe{
     }
 
     footer {
-        color: $color-primary;
+        color: white;
         font-family: 'IBM Plex Sans Condensed', sans-serif;
         width: 100%;
         height: 90px;
@@ -406,14 +441,11 @@ iframe{
         padding-top: 45px;
         padding-bottom: 45px;
         text-align: center;
-        position: relative;
         bottom: 0;
         z-index: -1;
-        margin-top: 10%;
-
-
-
-
+        margin: 0 auto;
+        margin-top:7%;
+        display: block;
     }
 
     footer li {
@@ -463,25 +495,26 @@ iframe{
 
     }
 
-    .navbar img {
-        position: absolute;
-        margin-top: auto;
-        justify-content: center;
-        width: 10%;
-        height: auto;
-
+   .navbar img {
+        width: 161.3px;
+       height: 41.81px;
+        
     }
 
-    .header-navbar {
-
-        margin-top: auto;
-    }
+   
     .header-navbar img {
         min-width: 161.3px;
-        min-height: 19.89px;
-
+        min-height: 41.81px;
+        
 
     }
+    .header__navbar_img{
+        min-width: 161.3px;
+        min-height: 41.81px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .navbar__links--li {
         height: 20%;
         text-align: right;

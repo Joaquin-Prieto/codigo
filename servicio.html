@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="starlink, router, wifi, wi-fi, largo alcance, cielo limpio, alta velocidad, servicio">
-    <meta name="description" content="Starlink es un servicio de Internet por satelites proevidos por SpaceX. Ofrece una señal de alta velocidad, Ideal para zonas rurales y Mantienen el cielo limpio">
+    <meta name="keywords"
+        content="starlink, router, wifi, wi-fi, largo alcance, cielo limpio, alta velocidad, servicio">
+    <meta name="description"
+        content="Starlink es un servicio de Internet por satelites proevidos por SpaceX. Ofrece una señal de alta velocidad, Ideal para zonas rurales y Mantienen el cielo limpio">
     <title>Servicio</title>
     <link rel="shortcut icon" href="../Codigo/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +26,8 @@
 
         <nav class="navbar">
             <div class="container-fluid">
-                <a class="header-navbar" href="#"><img src="../codigo/img/logo1.png" alt="spacex"></a>
+                <div id="header__navbar_img"> <a  href="../codigo/index.html"><img src="../codigo/img/logo_x_white.png"
+                    alt="spacex"></a></div>
                 <div class="navbar-toggler-div"><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -73,49 +76,45 @@
         </nav>
     </header>
     <main id="main__servicio">
-        <h2 class="subtitulo__servicio" id="sub__left">Señal de alta velocidad</h2>
-        <div id="velocidad">
-            <div class="p__left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut maiores dignissimos sint cupiditate
-                    totam
-                    in
-                    odit! Id, enim fuga necessitatibus vitae veniam obcaecati nobis sit debitis facilis praesentium
-                    natus
-                    eos.
-                </p>
-            </div>
-            <div class="img__left"><img src="./img/starlink.jpg" alt="Antena" width="50%"></div>
-
+       
+        <div class="servicio-grid">
+            
+                <div class="p__left_one">
+                    <h2 class="subtitulo__servicio" id="sub__left_two">Señal de alta velocidad</h2>
+                    <p>Con altas velocidades y una latencia tan baja como 20 ms en la mayoría de las ubicaciones, Starlink
+                        permite videollamadas, juegos en línea, transmisión y otras actividades de alta velocidad de datos
+                        que históricamente no han sido posibles con Internet satelital. Los usuarios también tienen la
+                        opción de llevar Starlink con ellos a través de la función Portabilidad o el servicio Starlink para
+                        vehículos recreativos.
+                    </p>
+                </div>
+                <div id="img__right_one"><img src="./img/starlink.jpg" alt="Antena" width="50%"></div>
+    
+            
+            
+            
+            
+    
+                <div class="img__left"><img src="./img/rural.jpg" alt="Antena" width="50%"></div>
+                <div class="p__right">
+                    <h2 class="subtitulo__servicio" id="sub__right">Ideal para zonas rurales</h2>
+                <p>Starlink es ideal para áreas donde la conectividad no es confiable o no esté disponible en absoluto. Personas de todo el mundo utilizan Starlink para obtener acceso a educación, servicios de salud e incluso soporte de comunicaciones durante desastres naturales.
+                    </p>
+                </div>
+            
+          
+           
+                <div class="p__left_two">
+                    <h2 class="subtitulo__servicio" id="sub__left">Mantenemos el cielo limpio</h2>
+                    <p>Starlink lidera la industria en innovaciones para reducir el brillo de los satélites, minimizar el impacto en la astronomía y proteger el cielo nocturno natural para que todos lo disfruten.
+                    </p>
+                </div>
+                <div id="img__right_two"><img src="./img/estrellas.jpg" alt="Antena" width="50%"></div>
+    
+    
+            
         </div>
-        <h2 class="subtitulo__servicio" id="sub__right">Ideal para zonas rurales</h2>
-        <div id="rural">
-
-            <div class="img__left"><img src="./img/rural.jpg" alt="Antena" width="50%"></div>
-            <div class="p__right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut maiores dignissimos sint cupiditate
-                    totam
-                    in
-                    odit! Id, enim fuga necessitatibus vitae veniam obcaecati nobis sit debitis facilis praesentium
-                    natus
-                    eos.
-                </p>
-            </div>
-        </div>
-        <h2 class="subtitulo__servicio" id="sub__left">Mantenemos el cielo limpio</h2>
-        <div id="cielo-limpio">
-            <div class="p__left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut maiores dignissimos sint cupiditate
-                    totam
-                    in
-                    odit! Id, enim fuga necessitatibus vitae veniam obcaecati nobis sit debitis facilis praesentium
-                    natus
-                    eos.
-                </p>
-            </div>
-            <div class="img__left"><img src="./img/estrellas.jpg" alt="Antena" width="50%"></div>
-
-
-        </div>
+       
     </main>
 
 
