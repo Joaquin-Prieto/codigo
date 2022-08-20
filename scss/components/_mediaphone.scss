@@ -6,7 +6,7 @@
 
     nav {
         width: 100%;
-        height: 6rem;
+        height: 7rem;
         background-color: black;
         color: $color-primary;
         overflow: hidden;
@@ -72,6 +72,7 @@
         justify-content: center;
         align-content: center;
         margin-bottom: 20px;
+        margin-top:10%;
     }
 
     .h-grid-h1 {
@@ -102,8 +103,8 @@
         font-family: 'monserrat', sans-serif;
         color: $color-primary;
         text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-decoration: none;
         padding-top: auto;
         padding-bottom: auto;
@@ -339,7 +340,9 @@ display: none;
         line-height: 1.6;
         text-align: center;
         margin-top: 1%;
-
+width: 70%;
+margin-left: auto;
+margin-right: auto;
     }
     .de__main{
         background-image: url("../img/mapa.png");
