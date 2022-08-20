@@ -1,6 +1,6 @@
 @media (min-width:150px) and (max-width:576px) {
     #qs__main {
-       height:2500px;
+       max-height:1500px;
 
     }
 
@@ -90,8 +90,8 @@
         font-family: 'monserrat', sans-serif;
         color: $color-primary;
         text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-decoration: none;
         padding-top: auto;
         padding-bottom: auto;
@@ -116,7 +116,7 @@
         margin-top: 1%;
         margin-bottom: 5%;
         padding: 12px;
-        width: 50%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
 
@@ -153,7 +153,7 @@
         margin-right: auto;
         text-align: center;
         padding: 05px;
-        width: 40%;
+        width: 70%;
         display: grid;
         grid-template-rows: 100px 40px 500px;
       
@@ -179,9 +179,9 @@ display: none;
         grid-row: 3 / 4;
     }
     #youtube img{
-        width: 30px;
-        height: 30px;
-    }
+        width: 50px;
+        height: 50px;
+       }
     /*Servicio*/
     @mixin grids {
         color: white;
@@ -382,7 +382,7 @@ display: none;
     .main__contacto {
         padding-left: 20%;
         padding-right: 20%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     #contactate {

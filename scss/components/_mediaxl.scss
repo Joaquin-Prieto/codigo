@@ -94,8 +94,8 @@
         font-family: 'monserrat', sans-serif;
         color: $color-primary;
         text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-decoration: none;
         padding-top: auto;
         padding-bottom: auto;
@@ -345,7 +345,7 @@
 
     }
     .de__main{
-        background-image: url("/img/mapa.png");
+        background-image: url("../img/mapa.png");
         
         background-repeat: no-repeat;
         background-attachment:scroll;

@@ -32,7 +32,7 @@ body {
     width: 50%;
     line-height: 1.6; }
   #home__header {
-    background-image: url("./img/b3.webp");
+    background-image: url("../img/b3.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50%;
@@ -65,8 +65,8 @@ body {
     font-family: 'monserrat', sans-serif;
     color: white;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-decoration: none;
     padding-top: auto;
     padding-bottom: auto; }
@@ -249,7 +249,7 @@ body {
     text-align: center;
     margin-top: 1%; }
   .de__main {
-    background-image: url("./img/mapa.png");
+    background-image: url("../img/mapa.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 50%;
@@ -443,7 +443,7 @@ body {
     margin-top: auto;
     margin-bottom: auto; }
   #home__header {
-    background-image: url("./img/b3.webp");
+    background-image: url("../img/b3.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 5%;
@@ -467,8 +467,8 @@ body {
     font-family: 'monserrat', sans-serif;
     color: white;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-decoration: none;
     padding-top: auto;
     padding-bottom: auto; }
@@ -509,15 +509,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 10px;
     width: 40%; }
   #video {
     padding: 0px 0px 7px 0px;
     border-bottom: 2px solid white;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    height: 270px; }
+    width: 410px;
+    height: 190px; }
   .qs__video_title {
     margin-bottom: 20px; }
   .qs__video_p {
@@ -648,7 +647,7 @@ body {
     text-align: center;
     margin-top: 1%; }
   .de__main {
-    background-image: url("./img/mapa.png");
+    background-image: url("../img/mapa.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 50%;
@@ -803,7 +802,7 @@ body {
 
 @media (min-width: 150px) and (max-width: 576px) {
   #qs__main {
-    height: 2500px; }
+    max-height: 1500px; }
   nav {
     width: 100%;
     height: 6rem;
@@ -835,7 +834,7 @@ body {
     margin-top: auto;
     margin-bottom: auto; }
   #home__header {
-    background-image: url("./img/b3.webp");
+    background-image: url("../img/b3.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 14%;
@@ -858,8 +857,8 @@ body {
     font-family: 'monserrat', sans-serif;
     color: white;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-decoration: none;
     padding-top: auto;
     padding-bottom: auto; }
@@ -878,7 +877,7 @@ body {
     margin-top: 1%;
     margin-bottom: 5%;
     padding: 12px;
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto; }
   #qs__heading h1 {
@@ -901,7 +900,7 @@ body {
     margin-right: auto;
     text-align: center;
     padding: 05px;
-    width: 40%;
+    width: 70%;
     display: grid;
     grid-template-rows: 100px 40px 500px; }
     .qs__video_title {
@@ -916,8 +915,8 @@ body {
     margin-bottom: 120px;
     grid-row: 3 / 4; }
   #youtube img {
-    width: 30px;
-    height: 30px; }
+    width: 50px;
+    height: 50px; }
   /*Servicio*/
   .servicio-grid {
     margin-top: 7%;
@@ -1064,7 +1063,7 @@ body {
   .main__contacto {
     padding-left: 20%;
     padding-right: 20%;
-    margin-top: 5%; }
+    margin-top: 10%; }
   #contactate {
     color: white;
     font-family: 'IBM Plex Sans Condensed', sans-serif; }
@@ -1217,7 +1216,7 @@ body {
     margin-top: auto;
     margin-bottom: auto; }
   #home__header {
-    background-image: url("./img/b3.webp");
+    background-image: url("../img/b3.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 11%;
@@ -1240,8 +1239,8 @@ body {
     font-family: 'monserrat', sans-serif;
     color: white;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     text-decoration: none;
     padding-top: auto;
     padding-bottom: auto; }
@@ -1416,7 +1415,7 @@ body {
     text-align: center;
     margin-top: 1%; }
   .de__main {
-    background-image: url("./img/mapa.png");
+    background-image: url("../img/mapa.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: 50%;
