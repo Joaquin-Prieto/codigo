@@ -7,13 +7,13 @@ body {
   background-color: #0c0c0c; }
 
 @media (min-width: 1621px) {
-  .preloader {
+  #preloader {
     display: flex;
     justify-content: center;
     align-content: center;
     min-height: 100vh;
     background: black;
-    background-image: url(./img/Untitled-design-38.png);
+    background-image: url("../img/Untitled-design-38.png");
     background-repeat: no-repeat;
     background-size: 10%;
     background-position: 49% 50%; }
