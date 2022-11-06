@@ -21,6 +21,11 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__container">
+                
+            </div>
+        </div>
     <header>
         <nav class="navbar">
             <div class="container-fluid">
@@ -110,6 +115,15 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
 
+        <script>
+
+            var loader = document.getElementsByClassName("preloader");
+            
+            window.addEventListener("load", function(){
+                loader.style.display = "none"
+            })
+            
+                    </script>
 </body>
 
 </html>
