@@ -7,6 +7,7 @@ body {
   background-color: #0c0c0c; }
 
 @media (min-width: 1621px) {
+  /*Preloader*/
   #preloader {
     display: flex;
     justify-content: center;
@@ -21,7 +22,7 @@ body {
     position: relative;
     width: 380px;
     height: 420px;
-    background: black; }
+    background: transparent; }
   .preloader__container::before {
     content: '';
     position: absolute;
@@ -31,7 +32,7 @@ body {
     height: 380px;
     background: linear-gradient(0deg, transparent, black, black, transparent, transparent);
     transform-origin: bottom right;
-    animation: animate 6s linear infinite; }
+    animation: animate 3s linear infinite; }
   .preloader__container::after {
     content: '';
     position: absolute;
@@ -41,13 +42,14 @@ body {
     height: 380px;
     background: linear-gradient(0deg, transparent, black, black, transparent, transparent);
     transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s; }
+    animation: animate 3s linear infinite;
+    animation-delay: -1.5s; }
   @keyframes animate {
     0% {
       transform: rotate(0deg); }
     100% {
       transform: rotate(-360deg); } }
+  /*Quienes somos*/
   #qs__main {
     height: 46rem; }
   nav {
